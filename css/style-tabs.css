@@ -1,0 +1,147 @@
+.c-tabs {
+    padding: 10px 0;
+    height: auto;
+    width: 100%
+}
+
+.c-tabs-nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0px 0;
+    width: 100%;
+}
+
+.c-tabs-nav__link {
+    color: #e3c334;
+    text-align: center;
+    -webkit-transition: color 0.4s;
+    transition: 0.2s;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+    border-radius: 22px;
+    border: 1px solid #a7a7a7;
+    background-color: rgba(48, 48, 48, 0);
+    padding: 10px 30px;
+}
+
+.c-tabs-nav__link:last-child {
+    margin-right: 0;
+}
+
+.c-tabs-nav__link:hover {}
+
+.c-tabs-nav__link.is-active {
+    border: 1px solid #e3c334;
+    box-shadow: 0 0px 15px 2px rgba(232, 193, 22, 0.5);
+}
+
+.c-tabs-nav__link.is-active span {
+    color: #e3c334;
+}
+
+.c-tabs-nav__link i,
+.c-tabs-nav__link span {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.c-tabs-nav__link span {
+    display: none;
+    color: #808080;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    width: 100%;
+}
+
+@media all and (min-width:200px) {
+    .c-tabs-nav__link i {
+        margin-bottom: 12px;
+        font-size: 2px;
+    }
+    .c-tabs-nav__link span {
+        display: block;
+    }
+}
+
+.c-tab {
+    display: none;
+}
+
+.c-tab_header {
+    font-family: '';
+    font-size: 30px;
+}
+
+.c-tab.is-active {
+    display: block;
+}
+
+.c-tab_content {
+    padding: 20px 0;
+    box-sizing: border-box;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.c-tabs.no-js .c-tabs-nav {
+    display: none;
+}
+
+.c-tabs.no-js .c-tab {
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.c-tabs.no-js .c-tab:last-child {
+    margin-bottom: 0;
+}
+
+
+/************************************/
+
+@media only screen and (max-width:900px) {
+    .c-tabs {
+        padding: 10px 0;
+        height: auto;
+        width: 100%
+    }
+    .c-tabs-nav {
+        margin: 0 auto;
+        width: 95%;
+    }
+    .c-tabs-nav__link {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        padding: 10px 0px;
+        margin: 5px 0;
+        margin-right: 4px;
+        color: #fff;
+        background-size: 100%;
+        text-align: center;
+        -webkit-transition: color 0.3s;
+        transition: color 0.3s;
+        text-decoration: none;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .c-tabs-nav__link {
+        padding: 10px 0;
+    }
+    .c-tabs-nav {
+        margin: 0 auto;
+    }
+    .c-tabs-nav a {
+        margin: 0 auto;
+        display: block;
+    }
+}

@@ -1,0 +1,102 @@
+.ac-container {
+    width: 100%;
+    margin: 40px auto 0px auto;
+    text-align: left;
+    align-items: stretch;
+}
+
+.ac-container label {
+    position: relative;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 10px 0;
+    padding: 10px 40px 10px 10px;
+    text-transform: uppercase;
+    justify-content: space-between;
+    user-select: none;
+}
+
+.ac-container label p {
+    color: #444444;
+    font-family: "Exo 2";
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.ac-container label::before {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #ed8032;
+    left: 10px;
+    bottom: -5px;
+    margin-top: -7px;
+    color: white;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.ac-container label::after {
+    content: '';
+    position: absolute;
+    width: 23px;
+    height: 14px;
+    background: url(../img/arrow_down.png) no-repeat center;
+    background-size: 18px;
+    right: 10px;
+    top: 50%;
+    margin-top: -7px;
+    color: white;
+    box-sizing: border-box;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.ac-container label.hover {}
+
+.ac-container .hover:after {
+    transform: rotate(-180deg);
+}
+
+.ac-container .closed {
+    overflow: hidden;
+    z-index: 10;
+    display: block;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+.ac-container article p {
+    padding: 5px 0px;
+    color: #888888;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.ac-container div {
+    width: 100%;
+    max-width: 380px;
+    min-width: 280px;
+
+}
+
+
+@media only screen and (max-width: 767px) {
+    .ac-container label::after {
+        opacity: 1;
+    }
+    .ac-container .closed {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .ac-container label p {
+        font-size: 16px;
+    }
+}

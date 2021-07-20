@@ -1,0 +1,24 @@
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1170px) {
+    .container {
+        width: 95%;
+    }
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 992px) {}
+
+
+/* Medium Devices, Tabs */
+
+@media only screen and (max-width: 768px) {}
+
+
+/* Small Devices, Phones */
+
+@media only screen and (max-width: 767px) {
+    
+}

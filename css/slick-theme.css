@@ -1,0 +1,123 @@
+@charset 'UTF-8';
+
+/* Arrows */
+
+.slick-prev,
+.slick-next {
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+
+.slick-prev {
+    left: -94px;
+    background: url(../img/left.png) no-repeat center;
+    background-size: contain;
+}
+
+.slick-next {
+    right: -94px;
+    background: url(../img/right.png) no-repeat center;
+    background-size: contain;
+}
+
+/*
+.slick-prev:hover {
+    background: url(../img/left_hover.png) no-repeat center;
+}
+
+.slick-next:hover {
+    background: url(../img/right_hover.png) no-repeat center;
+}
+*/
+
+
+/* Dots */
+
+.slick-dotted.slick-slider {
+    display: none;
+}
+
+.slick-dots {
+    position: relative;
+    bottom: -30px;
+    display: none;
+    margin: 0 auto;
+    padding: 0;
+    width: auto;
+    text-align: center;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-dots li {
+    position: relative;
+    display: none;
+    margin: 0 5px;
+    padding: 0;
+    width: 16px;
+    height: 16px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.slick-dots li.slick-active button{
+    background: #fff;
+    background: #6f8dad;
+}
+
+.slick-dots li button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: inherit;
+    border: 0;
+    border-radius: 100%;
+    background: #fff;
+    border: 2px solid #6f8dad;
+    font-size: 0;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1235px) {
+    .slick-prev {
+        display: none !important;
+    }
+
+    .slick-next {
+        display: none !important;
+    }
+}
+@media only screen and (max-width: 1370px) {
+    .slick-prev {
+        left: -40px;
+    }
+
+    .slick-next {
+        right: -40px;
+    }
+}
